@@ -18,14 +18,14 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    content: "01234 567 890",
-    href: "tel:+441234567890",
+    content: "024 7601 2642",
+    href: "tel:+442476012642",
   },
   {
     icon: Mail,
     label: "Email",
-    content: "info@essentialsafetymanagement.co.uk",
-    href: "mailto:info@essentialsafetymanagement.co.uk",
+    content: "info@essentialsafetymanagement.com",
+    href: "mailto:info@essentialsafetymanagement.com",
   },
 ];
 

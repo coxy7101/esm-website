@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  FileText,
-  ClipboardCheck,
-  SearchCheck,
-  HardHat,
-  PhoneCall,
-  GraduationCap,
   ArrowRight,
   Building2,
   Factory,
@@ -16,63 +10,13 @@ import {
 } from "lucide-react";
 import { FadeUp } from "@/components/fade-up";
 import { FinalCta } from "@/components/final-cta";
+import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Services | Essential Safety Management",
   description:
     "Health & safety policies, risk assessments, audits, CDM support, competent person services and training for West Midlands businesses.",
 };
-
-const services = [
-  {
-    slug: "policies-documentation",
-    icon: FileText,
-    title: "Policies & Documentation",
-    description:
-      "Legally compliant health & safety policies written in plain English and tailored to how your business actually operates.",
-    points: ["Tailored employee handbooks", "Annual policy reviews", "Method statements & safe systems of work"],
-  },
-  {
-    slug: "risk-assessments",
-    icon: ClipboardCheck,
-    title: "Risk Assessments",
-    description:
-      "Practical assessments that identify real hazards in your workplace — and give you clear, prioritised actions to control them.",
-    points: ["Fire risk assessments", "COSHH assessments", "Workplace & task-specific hazards"],
-  },
-  {
-    slug: "audits-compliance",
-    icon: SearchCheck,
-    title: "Audits & Compliance",
-    description:
-      "Independent audits that show exactly where you stand against current legislation, with a clear roadmap to full compliance.",
-    points: ["Full compliance gap analysis", "Workplace inspections", "Prioritised action plans"],
-  },
-  {
-    slug: "construction-safety-cdm",
-    icon: HardHat,
-    title: "Construction Safety / CDM Support",
-    description:
-      "Hands-on CDM 2015 support for clients, principal contractors and designers — from pre-construction to handover.",
-    points: ["Site inspections & reports", "RAMS preparation & review", "Construction phase plans"],
-  },
-  {
-    slug: "competent-person",
-    icon: PhoneCall,
-    title: "Competent Person Service",
-    description:
-      "Meet your legal duty to appoint a competent person — with a retained consultant who knows your business inside out.",
-    points: ["Retained advisory service", "24/7 incident support line", "Named consultant for your business"],
-  },
-  {
-    slug: "training",
-    icon: GraduationCap,
-    title: "H&S Training",
-    description:
-      "Engaging, jargon-free training delivered on-site or remotely, so your team understands safety rather than just signing a form.",
-    points: ["Staff safety awareness", "Fire warden training", "Manual handling & toolbox talks"],
-  },
-];
 
 const industries = [
   {
