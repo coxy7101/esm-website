@@ -4,7 +4,7 @@ import { FadeUp } from "@/components/fade-up";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact | Essential Safety Management",
+  title: "Contact",
   description:
     "Book your free, no-obligation health & safety consultation. Serving Coventry, Birmingham, Leicester and Warwickshire from our base in Bulkington.",
 };

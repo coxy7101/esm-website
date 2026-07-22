@@ -4,7 +4,7 @@ import { FadeUp } from "@/components/fade-up";
 import { FinalCta } from "@/components/final-cta";
 
 export const metadata: Metadata = {
-  title: "About | Essential Safety Management",
+  title: "About",
   description:
     "Essential Safety Management is a health & safety consultancy based in Bulkington, Warwickshire, delivering practical, jargon-free safety advice across the West Midlands.",
 };
