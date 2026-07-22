@@ -53,14 +53,14 @@ export function SiteFooter() {
               className="flex w-fit items-center gap-2 text-sm text-white/70 transition-colors hover:text-white"
             >
               <Phone className="size-4 shrink-0 text-brand-green" aria-hidden="true" />
-              01234 567 890
+              024 7601 2642
             </a>
             <a
-              href="mailto:info@essentialsafetymanagement.co.uk"
+              href="mailto:info@essentialsafetymanagement.com"
               className="flex w-fit items-center gap-2 text-sm text-white/70 transition-colors hover:text-white"
             >
               <Mail className="size-4 shrink-0 text-brand-green" aria-hidden="true" />
-              info@essentialsafetymanagement.co.uk
+              info@essentialsafetymanagement.com
             </a>
           </div>
         </div>
