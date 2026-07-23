@@ -46,7 +46,7 @@ export default function ContactPage() {
               Get Your Free, No-Obligation Consultation Today
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
-              One conversation is all it takes to understand where your business stands. No pressure, no sales pitch —
+              One conversation is all it takes to understand where your business stands. No pressure, no sales pitch - 
               just honest, practical advice.
             </p>
           </FadeUp>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 Let&apos;s Talk Safety
               </h2>
               <p className="max-w-xl text-base leading-relaxed text-muted-foreground text-pretty">
-                Call, email or send us a message — whichever suits you. We answer every enquiry personally, usually the
+                Call, email or send us a message - whichever suits you. We answer every enquiry personally, usually the
                 same day.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 ))}
               </ul>
               <p className="text-sm leading-relaxed text-white/70">
-                Outside these areas? Get in touch — we regularly travel further for the right projects.
+                Outside these areas? Get in touch - we regularly travel further for the right projects.
               </p>
             </div>
           </FadeUp>

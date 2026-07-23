@@ -9,7 +9,7 @@ import { PackagesFaq } from "@/components/packages-faq";
 export const metadata: Metadata = {
   title: "Packages",
   description:
-    "H&S packages tailored to your business — from essential compliance support to fully outsourced health & safety management. Contact us for a quote.",
+    "H&S packages tailored to your business - from essential compliance support to fully outsourced health & safety management. Contact us for a quote.",
 };
 
 export default function PackagesPage() {

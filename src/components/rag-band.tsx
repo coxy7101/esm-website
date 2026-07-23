@@ -9,7 +9,7 @@ const stages = [
     accent: "bg-brand-red",
     text: "text-brand-red",
     description:
-      "No formal policies, out-of-date assessments, or unknown legal duties. You're exposed to enforcement action, fines and — worst of all — preventable harm.",
+      "No formal policies, out-of-date assessments, or unknown legal duties. You're exposed to enforcement action, fines and - worst of all - preventable harm.",
   },
   {
     icon: TrendingUp,
@@ -25,7 +25,7 @@ const stages = [
     accent: "bg-brand-green",
     text: "text-brand-green",
     description:
-      "Policies current, risks assessed, staff trained, records audit-ready. You can prove compliance on demand — and focus on running your business.",
+      "Policies current, risks assessed, staff trained, records audit-ready. You can prove compliance on demand - and focus on running your business.",
   },
 ];
 

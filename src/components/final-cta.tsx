@@ -9,7 +9,7 @@ export function FinalCta() {
           Book your free, no-obligation consultation today.
         </h2>
         <p className="max-w-xl text-base leading-relaxed text-white/70 text-pretty">
-          One conversation is all it takes to understand where your business stands — and what it would take to get
+          One conversation is all it takes to understand where your business stands - and what it would take to get
           fully compliant.
         </p>
         <Link

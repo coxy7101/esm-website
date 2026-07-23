@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
@@ -12,8 +13,25 @@ const bars = [
 
 export function Hero() {
   return (
-    <section className="bg-navy-dark text-white">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28 lg:px-8">
+    <section className="relative overflow-hidden bg-navy-dark text-white">
+      {/* Background photograph */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <Image
+          src="/images/hero-window-cleaners.jpg"
+          alt=""
+          fill
+          style={{ objectFit: "cover", objectPosition: "center", filter: "grayscale(100%)" }}
+          loading="eager"
+          fetchPriority="high"
+        />
+        {/* Dark navy gradient overlay */}
+        <div
+          className="absolute inset-0"
+          style={{ background: "rgba(18,41,77,0.78)" }}
+        />
+      </div>
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28 lg:px-8">
         <div className="flex flex-col items-start gap-6">
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -22,7 +40,7 @@ export function Hero() {
             className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl lg:text-6xl"
           >
             From Risk to Compliance{" "}
-            <span className="text-brand-green">— Handled.</span>
+            <span className="text-brand-green"> - Handled.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 24 }}

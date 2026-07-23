@@ -60,7 +60,7 @@ export default function ServicesPage() {
               Expert Health &amp; Safety Services Across the West Midlands
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
-              Everything your business needs to stay legally compliant, protect your staff and pass any inspection —
+              Everything your business needs to stay legally compliant, protect your staff and pass any inspection - 
               delivered by qualified consultants who speak your language, not legal jargon.
             </p>
           </FadeUp>
@@ -78,7 +78,7 @@ export default function ServicesPage() {
               What We Deliver
             </h2>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground text-pretty">
-              Six core services covering every stage of your compliance journey — use one, or combine them into a
+              Six core services covering every stage of your compliance journey - use one, or combine them into a
               complete safety management package.
             </p>
           </FadeUp>

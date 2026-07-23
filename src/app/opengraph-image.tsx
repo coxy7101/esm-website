@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Essential Safety Management — Health & Safety Consultancy";
+export const alt = "Essential Safety Management - Health & Safety Consultancy";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

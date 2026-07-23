@@ -83,7 +83,7 @@ export default async function ServiceDetailPage({
       <section className="bg-background" aria-labelledby="service-detail-heading">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-[1fr_340px]">
-            {/* Left — detail copy */}
+            {/* Left - detail copy */}
             <FadeUp className="flex flex-col gap-8">
               <p className="text-base leading-relaxed text-muted-foreground text-pretty md:text-lg">
                 {service.detail.intro}
@@ -113,7 +113,7 @@ export default async function ServiceDetailPage({
               </p>
             </FadeUp>
 
-            {/* Right — sidebar CTA */}
+            {/* Right - sidebar CTA */}
             <FadeUp delay={0.15} className="flex flex-col gap-6">
               <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-navy">Ready to get started?</h3>

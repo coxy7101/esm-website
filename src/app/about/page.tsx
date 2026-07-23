@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Award, MessagesSquare, MapPin, ShieldCheck } from "lucide-react";
 import { FadeUp } from "@/components/fade-up";
 import { FinalCta } from "@/components/final-cta";
@@ -14,7 +15,7 @@ const values = [
     icon: Award,
     title: "Certified Expertise",
     description:
-      "NEBOSH and IOSH qualified consultants with hands-on experience across construction, manufacturing and commercial environments — not just theory from a textbook.",
+      "NEBOSH and IOSH qualified consultants with hands-on experience across construction, manufacturing and commercial environments - not just theory from a textbook.",
   },
   {
     icon: MessagesSquare,
@@ -26,7 +27,7 @@ const values = [
     icon: MapPin,
     title: "Local & Reliable",
     description:
-      "Based in Bulkington, we're on-site across the West Midlands when you need us most — for planned visits, urgent incidents or a same-day phone call.",
+      "Based in Bulkington, we're on-site across the West Midlands when you need us most - for planned visits, urgent incidents or a same-day phone call.",
   },
 ];
 
@@ -38,19 +39,39 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-navy text-white" aria-labelledby="about-hero-heading">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
-          <FadeUp className="flex max-w-3xl flex-col gap-5">
-            <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">About Us</p>
-            <h1
-              id="about-hero-heading"
-              className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl"
-            >
-              Moving West Midlands Businesses From Risk to Compliance
-            </h1>
-            <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
-              A hands-on health &amp; safety consultancy built on one belief: compliance should make your business
-              safer and stronger — not bury it in paperwork.
-            </p>
-          </FadeUp>
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <FadeUp className="flex max-w-3xl flex-col gap-5">
+              <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">About Us</p>
+              <h1
+                id="about-hero-heading"
+                className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl"
+              >
+                Moving West Midlands Businesses From Risk to Compliance
+              </h1>
+              <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
+                A hands-on health &amp; safety consultancy built on one belief: compliance should make your business
+                safer and stronger - not bury it in paperwork.
+              </p>
+            </FadeUp>
+
+            <FadeUp delay={0.15}>
+              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+                <Image
+                  src="/images/construction-scaffold.jpg"
+                  alt="Safety professional working at height on a construction site"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                {/* Subtle amber accent border */}
+                <div
+                  className="absolute inset-0 rounded-xl ring-2 ring-inset"
+                  style={{ borderColor: "rgba(244,160,32,0.35)" }}
+                  aria-hidden="true"
+                />
+              </div>
+            </FadeUp>
+          </div>
         </div>
       </section>
 
@@ -67,7 +88,7 @@ export default function AboutPage() {
             <p className="text-base leading-relaxed text-muted-foreground text-pretty">
               Essential Safety Management was founded in Bulkington, Warwickshire, with a simple goal: give small and
               medium-sized businesses access to the same calibre of health &amp; safety expertise that big companies
-              take for granted — without the big-company price tag or the big-company jargon.
+              take for granted - without the big-company price tag or the big-company jargon.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground text-pretty">
               Too many businesses see health &amp; safety as a burden: confusing legislation, generic templates and
@@ -76,7 +97,7 @@ export default function AboutPage() {
             </p>
             <p className="text-base leading-relaxed text-muted-foreground text-pretty">
               From a first fire risk assessment to a fully retained competent person service, our mission is the same:
-              move your business from risk to compliance — and keep it there.
+              move your business from risk to compliance - and keep it there.
             </p>
           </FadeUp>
 
@@ -88,7 +109,7 @@ export default function AboutPage() {
                 follow it, it isn&apos;t working.&rdquo;
               </blockquote>
               <p className="text-sm font-medium uppercase tracking-widest text-white/60">
-                Essential Safety Management — Bulkington, Warwickshire
+                Essential Safety Management - Bulkington, Warwickshire
               </p>
             </div>
           </FadeUp>

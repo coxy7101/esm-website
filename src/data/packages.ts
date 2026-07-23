@@ -121,7 +121,7 @@ export const packagesFaq: FaqItem[] = [
   {
     question: "Are there any setup fees or hidden costs?",
     answer:
-      "No. Your quote covers everything included in your package with no setup fees and no hidden extras — what we agree is what you get.",
+      "No. Your quote covers everything included in your package with no setup fees and no hidden extras - what we agree is what you get.",
   },
   {
     question: "Do you offer bespoke packages?",

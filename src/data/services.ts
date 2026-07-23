@@ -32,7 +32,7 @@ export const services: Service[] = [
       "Legally compliant health & safety policies written in plain English and tailored to how your business actually operates.",
     points: ["Tailored employee handbooks", "Annual policy reviews", "Method statements & safe systems of work"],
     intro:
-      "Generic downloaded templates rarely hold up to scrutiny — and they don't reflect how your business actually works. We write policies and documentation from scratch, built around your real operations, so they're genuinely useful day-to-day and defensible if you're ever inspected.",
+      "Generic downloaded templates rarely hold up to scrutiny - and they don't reflect how your business actually works. We write policies and documentation from scratch, built around your real operations, so they're genuinely useful day-to-day and defensible if you're ever inspected.",
     whatsIncluded: [
       "H&S policy development",
       "Procedure writing",
@@ -42,7 +42,7 @@ export const services: Service[] = [
       "Annual policy reviews",
     ],
     whyItMatters:
-      "Under the Health and Safety at Work etc. Act 1974, employers with five or more staff are legally required to have a written health & safety policy. Beyond the legal minimum, clear documentation is often the first thing an inspector, insurer, or client asks to see — and the difference between a smooth audit and a serious problem.",
+      "Under the Health and Safety at Work etc. Act 1974, employers with five or more staff are legally required to have a written health & safety policy. Beyond the legal minimum, clear documentation is often the first thing an inspector, insurer, or client asks to see - and the difference between a smooth audit and a serious problem.",
     idealFor: ["Businesses without any current H&S policy", "Growing teams past the 5-employee threshold", "Anyone renewing insurance or tendering for contracts"],
   },
   {
@@ -50,10 +50,10 @@ export const services: Service[] = [
     icon: ClipboardCheck,
     title: "Risk Assessments",
     description:
-      "Practical assessments that identify real hazards in your workplace — and give you clear, prioritised actions to control them.",
+      "Practical assessments that identify real hazards in your workplace - and give you clear, prioritised actions to control them.",
     points: ["Fire risk assessments", "COSHH assessments", "Workplace & task-specific hazards"],
     intro:
-      "A risk assessment that just ticks boxes doesn't protect anyone. We walk your site, talk to your team, and identify the hazards that actually exist in your workplace — then give you a clear, prioritised plan to control them.",
+      "A risk assessment that just ticks boxes doesn't protect anyone. We walk your site, talk to your team, and identify the hazards that actually exist in your workplace - then give you a clear, prioritised plan to control them.",
     whatsIncluded: [
       "General workplace risk assessments",
       "COSHH assessments",
@@ -63,7 +63,7 @@ export const services: Service[] = [
       "Lone worker risk assessments",
     ],
     whyItMatters:
-      "The Management of Health and Safety at Work Regulations 1999 require every employer to carry out suitable risk assessments. More importantly, a good one is the single biggest factor in preventing workplace incidents before they happen — not just paperwork after the fact.",
+      "The Management of Health and Safety at Work Regulations 1999 require every employer to carry out suitable risk assessments. More importantly, a good one is the single biggest factor in preventing workplace incidents before they happen - not just paperwork after the fact.",
     idealFor: ["Any workplace with physical hazards", "Businesses handling hazardous substances", "Sites due for renewal of an outdated assessment"],
   },
   {
@@ -74,7 +74,7 @@ export const services: Service[] = [
       "Independent audits that show exactly where you stand against current legislation, with a clear roadmap to full compliance.",
     points: ["Full compliance gap analysis", "Workplace inspections", "Prioritised action plans"],
     intro:
-      "An independent set of eyes catches what internal reviews miss. We audit your current practices against current legislation and industry best practice, then hand you a clear, prioritised roadmap — not just a list of problems.",
+      "An independent set of eyes catches what internal reviews miss. We audit your current practices against current legislation and industry best practice, then hand you a clear, prioritised roadmap - not just a list of problems.",
     whatsIncluded: [
       "Compliance audits",
       "Site safety inspections",
@@ -84,7 +84,7 @@ export const services: Service[] = [
       "Follow-up verification",
     ],
     whyItMatters:
-      "Legislation changes, teams change, and practices drift over time even at well-run businesses. A periodic independent audit catches gaps before they become HSE enforcement action, insurance disputes, or — worst case — a preventable incident.",
+      "Legislation changes, teams change, and practices drift over time even at well-run businesses. A periodic independent audit catches gaps before they become HSE enforcement action, insurance disputes, or - worst case - a preventable incident.",
     idealFor: ["Businesses preparing for ISO 45001", "Anyone unsure of their current compliance status", "Post-incident review requirements"],
   },
   {
@@ -92,10 +92,10 @@ export const services: Service[] = [
     icon: HardHat,
     title: "Construction Safety / CDM Support",
     description:
-      "Hands-on CDM 2015 support for clients, principal contractors and designers — from pre-construction to handover.",
+      "Hands-on CDM 2015 support for clients, principal contractors and designers - from pre-construction to handover.",
     points: ["Site inspections & reports", "RAMS preparation & review", "Construction phase plans"],
     intro:
-      "CDM 2015 places specific legal duties on clients, designers, and contractors alike. We provide hands-on, practical support through every stage of a project — from pre-construction planning to handover — so nothing falls through the gaps.",
+      "CDM 2015 places specific legal duties on clients, designers, and contractors alike. We provide hands-on, practical support through every stage of a project - from pre-construction planning to handover - so nothing falls through the gaps.",
     whatsIncluded: [
       "Principal Designer support",
       "CDM Coordinator services",
@@ -105,7 +105,7 @@ export const services: Service[] = [
       "CDM compliance audits",
     ],
     whyItMatters:
-      "CDM 2015 duties apply to every construction project, regardless of size — and clients and principal contractors carry real legal liability if they're not met. Getting the right support in place early avoids delays, disputes, and enforcement risk later.",
+      "CDM 2015 duties apply to every construction project, regardless of size - and clients and principal contractors carry real legal liability if they're not met. Getting the right support in place early avoids delays, disputes, and enforcement risk later.",
     idealFor: ["Principal contractors on active builds", "Clients commissioning construction work", "Designers needing CDM-compliant documentation"],
   },
   {
@@ -113,7 +113,7 @@ export const services: Service[] = [
     icon: PhoneCall,
     title: "Competent Person Service",
     description:
-      "Meet your legal duty to appoint a competent person — with a retained consultant who knows your business inside out.",
+      "Meet your legal duty to appoint a competent person - with a retained consultant who knows your business inside out.",
     points: ["Retained advisory service", "24/7 incident support line", "Named consultant for your business"],
     intro:
       "Every employer is legally required to appoint a competent person for health & safety. Rather than a rotating call centre, you get a named consultant who actually knows your business, your site, and your history.",
@@ -125,7 +125,7 @@ export const services: Service[] = [
       "Regular check-ins, not just reactive calls",
     ],
     whyItMatters:
-      "Section 7 of the Management of Health and Safety at Work Regulations 1999 requires every employer to appoint one or more competent persons. It's one of the most commonly overlooked legal duties for smaller businesses — and one of the simplest to resolve properly.",
+      "Section 7 of the Management of Health and Safety at Work Regulations 1999 requires every employer to appoint one or more competent persons. It's one of the most commonly overlooked legal duties for smaller businesses - and one of the simplest to resolve properly.",
     idealFor: ["Businesses without an internal H&S manager", "SMEs needing ongoing, not one-off, support", "Anyone currently relying on an informal arrangement"],
   },
   {
@@ -136,7 +136,7 @@ export const services: Service[] = [
       "Engaging, jargon-free training delivered on-site or remotely, so your team understands safety rather than just signing a form.",
     points: ["Staff safety awareness", "Fire warden training", "Manual handling & toolbox talks"],
     intro:
-      "Training that's just a slideshow and a signature doesn't change behaviour. We deliver practical, jargon-free sessions — on-site or remote — that your team actually engages with and remembers.",
+      "Training that's just a slideshow and a signature doesn't change behaviour. We deliver practical, jargon-free sessions - on-site or remote - that your team actually engages with and remembers.",
     whatsIncluded: [
       "Manual handling training",
       "Health & safety induction",
@@ -146,7 +146,7 @@ export const services: Service[] = [
       "Competency assessments",
     ],
     whyItMatters:
-      "Well-trained staff are your best line of defence against incidents — and demonstrable training records are exactly what insurers and inspectors look for. Untrained teams are consistently the biggest single risk factor in workplace incidents.",
+      "Well-trained staff are your best line of defence against incidents - and demonstrable training records are exactly what insurers and inspectors look for. Untrained teams are consistently the biggest single risk factor in workplace incidents.",
     idealFor: ["New starters needing induction training", "Teams handling manual tasks or hazardous materials", "Businesses needing refresher training for compliance"],
   },
   {
@@ -157,7 +157,7 @@ export const services: Service[] = [
       "Detailed fire risk assessments in line with the Regulatory Reform (Fire Safety) Order 2005, with clear, actionable recommendations.",
     points: ["Fire risk assessments", "Emergency evacuation plans", "Fire safety training"],
     intro:
-      "Fire safety failures are among the most serious — and most preventable — risks any business faces. We identify fire hazards on your premises and give you a clear, practical plan of control measures, not just a compliance certificate.",
+      "Fire safety failures are among the most serious - and most preventable - risks any business faces. We identify fire hazards on your premises and give you a clear, practical plan of control measures, not just a compliance certificate.",
     whatsIncluded: [
       "Fire risk assessments",
       "Fire safety audits",
@@ -175,10 +175,10 @@ export const services: Service[] = [
     icon: AlertTriangle,
     title: "Accident Investigation",
     description:
-      "Thorough, impartial investigation following a workplace incident — establishing root cause and preventing recurrence.",
+      "Thorough, impartial investigation following a workplace incident - establishing root cause and preventing recurrence.",
     points: ["Root cause analysis", "RIDDOR reporting support", "Corrective action planning"],
     intro:
-      "What happens after an incident matters as much as prevention beforehand. We carry out thorough, impartial investigations to establish exactly what happened and why — then help you put changes in place so it doesn't happen again.",
+      "What happens after an incident matters as much as prevention beforehand. We carry out thorough, impartial investigations to establish exactly what happened and why - then help you put changes in place so it doesn't happen again.",
     whatsIncluded: [
       "On-site incident investigation",
       "Root cause analysis",
@@ -188,7 +188,7 @@ export const services: Service[] = [
       "Investigation report for insurers/HSE",
     ],
     whyItMatters:
-      "Serious workplace incidents may be reportable under RIDDOR, and a poorly handled investigation can expose a business to greater liability — or miss the real cause, leaving the risk of recurrence in place. An independent, properly documented investigation protects both your people and your business.",
+      "Serious workplace incidents may be reportable under RIDDOR, and a poorly handled investigation can expose a business to greater liability - or miss the real cause, leaving the risk of recurrence in place. An independent, properly documented investigation protects both your people and your business.",
     idealFor: ["Businesses that have had a reportable incident", "Anyone facing an HSE investigation", "Insurers requiring an independent report"],
   },
   {
@@ -199,7 +199,7 @@ export const services: Service[] = [
       "Practical support building and maintaining an ISO 45001 occupational health & safety management system, from gap analysis to certification readiness.",
     points: ["Gap analysis against ISO 45001", "Management system documentation", "Certification readiness support"],
     intro:
-      "ISO 45001 is the international standard for occupational health & safety management systems — but building one from scratch, or maintaining an existing one, takes real expertise. We support you through every stage, from initial gap analysis to certification-ready documentation.",
+      "ISO 45001 is the international standard for occupational health & safety management systems - but building one from scratch, or maintaining an existing one, takes real expertise. We support you through every stage, from initial gap analysis to certification-ready documentation.",
     whatsIncluded: [
       "Gap analysis against ISO 45001 requirements",
       "Management system documentation",
