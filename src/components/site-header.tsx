@@ -34,12 +34,15 @@ export function SiteHeader() {
       ? pathname === "/"
       : pathname === href || pathname.startsWith(href + "/");
 
+  const isHome = pathname === "/";
+  const transparent = isHome && !scrolled && !open;
+
   return (
     <header
       className={
-        scrolled || open
-          ? "fixed inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85 transition-colors duration-300"
-          : "fixed inset-x-0 top-0 z-50 border-b border-transparent bg-transparent transition-colors duration-300"
+        transparent
+          ? "fixed inset-x-0 top-0 z-50 border-b border-transparent bg-transparent transition-colors duration-300"
+          : "fixed inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85 transition-colors duration-300"
       }
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -54,9 +57,9 @@ export function SiteHeader() {
           />
           <span
             className={
-              scrolled || open
-                ? "hidden text-sm font-bold uppercase tracking-wider text-navy leading-tight sm:block transition-colors duration-300"
-                : "hidden text-sm font-bold uppercase tracking-wider text-white leading-tight sm:block transition-colors duration-300"
+              transparent
+                ? "hidden text-sm font-bold uppercase tracking-wider text-white leading-tight sm:block transition-colors duration-300"
+                : "hidden text-sm font-bold uppercase tracking-wider text-navy leading-tight sm:block transition-colors duration-300"
             }
           >
             Essential Safety
@@ -68,7 +71,7 @@ export function SiteHeader() {
         <nav aria-label="Main navigation" className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => {
             const active = isActive(link.href);
-            const lightText = !scrolled && !open;
+            const lightText = transparent;
             return (
               <Link
                 key={link.href}
@@ -96,9 +99,9 @@ export function SiteHeader() {
         <button
           type="button"
           className={
-            scrolled || open
-              ? "inline-flex items-center justify-center rounded-lg p-2 text-navy transition-colors duration-300 md:hidden"
-              : "inline-flex items-center justify-center rounded-lg p-2 text-white transition-colors duration-300 md:hidden"
+            transparent
+              ? "inline-flex items-center justify-center rounded-lg p-2 text-white transition-colors duration-300 md:hidden"
+              : "inline-flex items-center justify-center rounded-lg p-2 text-navy transition-colors duration-300 md:hidden"
           }
           aria-expanded={open}
           aria-controls="mobile-menu"
