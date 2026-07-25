@@ -52,15 +52,15 @@ export function ServicesOverview() {
               How We Help
             </h2>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground text-pretty">
-              Six core services covering everything from your first policy document to full compliance audits.
+              Nine core services covering everything from your first policy document to full compliance audits.
             </p>
           </FadeUp>
 
           <FadeUp delay={0.15}>
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(18,41,77,0.18)]">
               <Image
-                src="/images/construction-handshake.jpg"
-                alt="Two construction professionals shaking hands on site, representing trusted safety partnerships"
+                src="/images/industry-facilities-management.jpg"
+                alt="Fire safety compliance inspection in progress, representing trusted safety partnerships"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
                 sizes="(max-width: 1024px) 100vw, 50vw"

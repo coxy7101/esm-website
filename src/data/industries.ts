@@ -13,6 +13,7 @@ import {
 
 export type Industry = {
   icon: LucideIcon;
+  image?: string;
   title: string;
   description: string;
   keyServices: string[];
@@ -22,6 +23,7 @@ export type Industry = {
 export const industries: Industry[] = [
   {
     icon: FileText,
+    image: "/images/industry-construction.jpg",
     title: "Construction",
     description:
       "From groundworks to high-rise, we provide specialist CDM consultancy, site safety management, and construction-specific risk assessments to keep your projects compliant and your workforce safe.",
@@ -30,6 +32,7 @@ export const industries: Industry[] = [
   },
   {
     icon: HardHat,
+    image: "/images/industry-manufacturing.jpg",
     title: "Manufacturing",
     description:
       "Manufacturing environments present complex hazards. We help manufacturers manage machinery safety, COSHH, manual handling, and noise risks to meet their legal obligations and protect their workforce.",
@@ -38,6 +41,7 @@ export const industries: Industry[] = [
   },
   {
     icon: Coffee,
+    image: "/images/industry-hospitality.jpg",
     title: "Hospitality",
     description:
       "Hotels, restaurants, and leisure venues face unique health and safety challenges. We provide tailored risk assessments, food safety integration, and practical competency development for the hospitality sector.",
@@ -46,6 +50,7 @@ export const industries: Industry[] = [
   },
   {
     icon: ShieldCheck,
+    image: "/images/industry-retail-leisure.jpg",
     title: "Retail & Leisure",
     description:
       "From high street retailers to leisure facilities, we help businesses manage public safety, employee welfare, and compliance with health and safety legislation across multiple sites.",
@@ -54,6 +59,7 @@ export const industries: Industry[] = [
   },
   {
     icon: BookOpen,
+    image: "/images/industry-education.jpg",
     title: "Education",
     description:
       "Schools, colleges, and universities have a duty of care to students, staff, and visitors. We provide comprehensive health and safety support tailored to educational settings.",
@@ -62,6 +68,7 @@ export const industries: Industry[] = [
   },
   {
     icon: Stethoscope,
+    image: "/images/industry-healthcare.jpg",
     title: "Healthcare",
     description:
       "Healthcare settings present specific risks including manual handling, infection control, and lone working. We provide specialist support to NHS and private healthcare providers.",
@@ -70,6 +77,7 @@ export const industries: Industry[] = [
   },
   {
     icon: Truck,
+    image: "/images/industry-logistics-transport.jpg",
     title: "Logistics & Transport",
     description:
       "The logistics sector faces significant safety challenges including vehicle movements, manual handling, and driver welfare. We help logistics businesses manage these risks effectively.",
@@ -78,6 +86,7 @@ export const industries: Industry[] = [
   },
   {
     icon: ClipboardList,
+    image: "/images/industry-facilities-management.jpg",
     title: "Facilities Management",
     description:
       "Facilities managers are responsible for the safety of complex built environments. We provide the expertise to manage contractor safety, statutory compliance, and multi-occupancy building risks.",
@@ -86,6 +95,7 @@ export const industries: Industry[] = [
   },
   {
     icon: Trash2,
+    image: "/images/industry-waste-recycling.jpg",
     title: "Waste & Recycling",
     description:
       "The waste and recycling sector faces significant health and safety challenges including hazardous materials, machinery hazards, and manual handling. We provide specialist auditing, gap analysis, and competency development to help waste management businesses operate safely and compliantly.",

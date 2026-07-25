@@ -57,7 +57,7 @@ export default function AboutPage() {
             <FadeUp delay={0.15}>
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
                 <Image
-                  src="/images/construction-scaffold.jpg"
+                  src="/images/industry-construction.jpg"
                   alt="Safety professional working at height on a construction site"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}

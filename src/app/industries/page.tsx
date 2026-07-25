@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { industries } from "@/data/industries";
+import Image from "next/image";
 import { FadeUp } from "@/components/fade-up";
 
 export const metadata: Metadata = {
@@ -40,10 +41,21 @@ export default function IndustriesPage() {
           <div className="grid gap-8 md:grid-cols-2">
             {industries.map((industry, i) => (
               <FadeUp key={industry.title} delay={i * 0.05} className="h-full">
-                <article className="flex h-full flex-col gap-4 rounded-r-xl border-l-4 border-[#F4A020] bg-card p-8 shadow-sm">
-                  <div className="flex size-14 items-center justify-center rounded-lg bg-navy">
-                    <industry.icon className="size-7 text-white" aria-hidden="true" />
-                  </div>
+                <article className="flex h-full flex-col gap-4 overflow-hidden rounded-r-xl border-l-4 border-[#F4A020] bg-card shadow-sm">
+                  {industry.image && (
+                    <div className="relative aspect-video w-full">
+                      <Image src={industry.image} alt={industry.title} fill className="object-cover" />
+                      <div className="absolute bottom-3 left-3 flex size-12 items-center justify-center rounded-lg bg-navy">
+                        <industry.icon className="size-6 text-white" aria-hidden="true" />
+                      </div>
+                    </div>
+                  )}
+                  <div className="flex flex-1 flex-col gap-4 px-8 pb-8 pt-0">
+                  {!industry.image && (
+                    <div className="flex size-14 items-center justify-center rounded-lg bg-navy">
+                      <industry.icon className="size-7 text-white" aria-hidden="true" />
+                    </div>
+                  )}
                   <h3 className="text-2xl font-bold text-navy">{industry.title}</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground text-pretty">{industry.description}</p>
 
@@ -65,6 +77,7 @@ export default function IndustriesPage() {
                     <p className="text-xs leading-relaxed text-navy">
                       <span className="font-bold">Key Legislation:</span> {industry.keyLegislation}
                     </p>
+                  </div>
                   </div>
                 </article>
               </FadeUp>
