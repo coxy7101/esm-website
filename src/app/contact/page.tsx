@@ -54,8 +54,8 @@ export default function ContactPage() {
           <FadeUp delay={0.15}>
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
               <Image
-                src="/images/contact-reception-bell.jpg"
-                alt="Reception desk bell, representing a warm and responsive welcome"
+                src="/images/contact-office-phone.jpg"
+                alt="Office phone, representing our direct and responsive approach to enquiries"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
                 sizes="(max-width: 1024px) 100vw, 50vw"

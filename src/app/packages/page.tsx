@@ -18,8 +18,8 @@ export default function PackagesPage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white" aria-labelledby="packages-hero-heading">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
-          <FadeUp className="flex max-w-3xl flex-col gap-5">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:py-28 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
+          <FadeUp className="flex flex-col gap-5">
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">Our Packages</p>
             <h1
               id="packages-hero-heading"
@@ -31,6 +31,17 @@ export default function PackagesPage() {
               Choose the package that fits your business. From foundational support to fully outsourced H&amp;S
               management, we have a solution for every size and risk profile.
             </p>
+          </FadeUp>
+          <FadeUp delay={0.15}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+              <Image
+                src="/images/packages-desk-meeting.jpg"
+                alt="Planning documents and notes laid out on a table, representing considered, tailored support"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </FadeUp>
         </div>
       </section>

@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 };
 
 const caseStudyImages: Record<string, string> = {
+  Manufacturing: "/images/case-study-manufacturing-inspection.jpg",
+  Construction: "/images/case-study-construction-drawings.jpg",
   "Hospitality & Leisure": "/images/case-study-hospitality-kitchen.jpg",
 };
 
