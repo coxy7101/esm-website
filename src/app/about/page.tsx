@@ -62,6 +62,7 @@ export default function AboutPage() {
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
                 />
                 {/* Subtle amber accent border */}
                 <div

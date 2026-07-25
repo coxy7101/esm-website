@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <section className="bg-background">
-      <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
         <FadeUp className="flex flex-col gap-8">
           <div className="flex flex-col gap-3">
-            <h1 className="text-4xl font-bold uppercase tracking-tight text-navy">Privacy Policy</h1>
+            <h1 className="text-4xl font-bold uppercase tracking-tight text-navy md:text-5xl">Privacy Policy</h1>
             <p className="text-sm text-muted-foreground">Last updated: {new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}</p>
           </div>
 

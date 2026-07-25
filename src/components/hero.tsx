@@ -20,9 +20,9 @@ export function Hero() {
           src="/images/hero-window-cleaners.jpg"
           alt=""
           fill
+          sizes="100vw"
           style={{ objectFit: "cover", objectPosition: "center", filter: "grayscale(100%)" }}
-          loading="eager"
-          fetchPriority="high"
+          priority
         />
         <div className="absolute inset-0" style={{ background: "rgba(18,41,77,0.78)" }} />
       </div>

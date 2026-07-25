@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -18,6 +19,12 @@ const navLinks = [
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/"
+      ? pathname === "/"
+      : pathname === href || pathname.startsWith(href + "/");
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85">
@@ -43,7 +50,11 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-navy transition-colors hover:text-brand-green"
+              className={
+                isActive(link.href)
+                  ? "text-sm font-semibold text-brand-green"
+                  : "text-sm font-medium text-navy transition-colors hover:text-brand-green"
+              }
             >
               {link.label}
             </Link>
@@ -85,7 +96,11 @@ export function SiteHeader() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-3 text-base font-medium text-navy transition-colors hover:bg-muted"
+                  className={
+                    isActive(link.href)
+                      ? "rounded-lg bg-muted px-3 py-3 text-base font-semibold text-brand-green"
+                      : "rounded-lg px-3 py-3 text-base font-medium text-navy transition-colors hover:bg-muted"
+                  }
                 >
                   {link.label}
                 </Link>

@@ -137,4 +137,16 @@
   html {
     @apply font-sans;
   }
+
+  /* ── Global focus-visible ring ─────────────────────────────────────────────
+     Ensures every interactive element shows a clear, branded focus ring when
+     navigated by keyboard. Scoped to :focus-visible so mouse users are
+     unaffected. The outline-offset creates a small gap between the element
+     and the ring so it works on both light and dark backgrounds.
+  ────────────────────────────────────────────────────────────────────────── */
+  :focus-visible {
+    outline: 2px solid var(--brand-green);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
 }
