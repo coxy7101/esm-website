@@ -44,7 +44,7 @@ export default function IndustriesPage() {
                 <article className="flex h-full flex-col gap-4 overflow-hidden rounded-r-xl border-l-4 border-[#F4A020] bg-card shadow-sm">
                   {industry.image && (
                     <div className="relative aspect-video w-full">
-                      <Image src={industry.image} alt={industry.title} fill className="object-cover" />
+                      <Image src={industry.image} alt={industry.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
                       <div className="absolute bottom-3 left-3 flex size-12 items-center justify-center rounded-lg bg-navy">
                         <industry.icon className="size-6 text-white" aria-hidden="true" />
                       </div>

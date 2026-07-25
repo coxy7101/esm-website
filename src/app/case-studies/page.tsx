@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { AlertTriangle, Users, TrendingUp, Check } from "lucide-react";
 import { caseStudies } from "@/data/case-studies";
 import { FadeUp } from "@/components/fade-up";
@@ -9,12 +8,6 @@ export const metadata: Metadata = {
   title: "Case Studies",
   description:
     "See how we've helped businesses across construction, manufacturing, hospitality, and more achieve compliance, reduce incidents, and build genuine safety cultures.",
-};
-
-const caseStudyImages: Record<string, string> = {
-  Manufacturing: "/images/industry-manufacturing.jpg",
-  Construction: "/images/industry-construction.jpg",
-  "Hospitality & Leisure": "/images/industry-hospitality.jpg",
 };
 
 export default function CaseStudiesPage() {
@@ -48,18 +41,7 @@ export default function CaseStudiesPage() {
           <div className="flex flex-col gap-10">
             {caseStudies.map((study, i) => (
               <FadeUp key={study.title} delay={i * 0.05}>
-                <article className="overflow-hidden rounded-xl border border-border shadow-sm">
-                  {caseStudyImages[study.sector] && (
-                    <div className="relative aspect-[21/9] w-full">
-                      <Image
-                        src={caseStudyImages[study.sector]}
-                        alt={`${study.sector} case study`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="grid lg:grid-cols-[280px_1fr]">
+                <article className="grid overflow-hidden rounded-xl border border-border shadow-sm lg:grid-cols-[280px_1fr]">
                   {/* Sidebar */}
                   <div className="flex flex-col gap-6 bg-navy p-8 text-white">
                     <div className="flex flex-col gap-1.5">
@@ -120,7 +102,6 @@ export default function CaseStudiesPage() {
                         ))}
                       </ul>
                     </div>
-                  </div>
                   </div>
                 </article>
               </FadeUp>
