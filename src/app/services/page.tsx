@@ -50,7 +50,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy text-white" aria-labelledby="services-hero-heading">
+      <section className="bg-navy text-white texture-overlay" aria-labelledby="services-hero-heading">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:py-28 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
           <FadeUp className="flex flex-col gap-5">
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">Our Services</p>

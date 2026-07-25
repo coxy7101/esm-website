@@ -21,7 +21,7 @@ export default function CaseStudiesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy text-white" aria-labelledby="case-studies-hero-heading">
+      <section className="bg-navy text-white texture-overlay" aria-labelledby="case-studies-hero-heading">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <FadeUp className="flex max-w-3xl flex-col gap-5">
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">Real Results</p>
@@ -48,7 +48,7 @@ export default function CaseStudiesPage() {
           <div className="flex flex-col gap-10">
             {caseStudies.map((study, i) => (
               <FadeUp key={study.title} delay={i * 0.05}>
-                <article className="overflow-hidden rounded-xl border border-border shadow-sm">
+                <article className="overflow-hidden rounded-xl border border-border shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
                   {caseStudyImages[study.sector] && (
                     <div className="relative aspect-[21/9] w-full">
                       <Image

@@ -14,7 +14,7 @@ export default function IndustriesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy text-white" aria-labelledby="industries-hero-heading">
+      <section className="bg-navy text-white texture-overlay" aria-labelledby="industries-hero-heading">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <FadeUp className="flex max-w-3xl flex-col gap-5">
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">Sectors We Serve</p>
@@ -41,7 +41,7 @@ export default function IndustriesPage() {
           <div className="grid gap-8 md:grid-cols-2">
             {industries.map((industry, i) => (
               <FadeUp key={industry.title} delay={i * 0.05} className="h-full">
-                <article className="flex h-full flex-col gap-4 overflow-hidden rounded-r-xl border-l-4 border-[#F4A020] bg-card shadow-sm">
+                <article className="flex h-full flex-col gap-4 overflow-hidden rounded-r-xl border-l-4 border-[#F4A020] bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
                   {industry.image && (
                     <div className="relative aspect-video w-full">
                       <Image src={industry.image} alt={industry.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />

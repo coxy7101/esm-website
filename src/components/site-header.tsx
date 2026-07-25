@@ -52,8 +52,8 @@ export function SiteHeader() {
               href={link.href}
               className={
                 isActive(link.href)
-                  ? "text-sm font-semibold text-brand-green"
-                  : "text-sm font-medium text-navy transition-colors hover:text-brand-green"
+                  ? "relative text-sm font-semibold text-brand-green after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-brand-green after:content-['']"
+                  : "relative text-sm font-medium text-navy transition-colors hover:text-brand-green after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-brand-green after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
               }
             >
               {link.label}
@@ -61,7 +61,7 @@ export function SiteHeader() {
           ))}
           <Link
             href="/contact"
-            className="rounded-lg bg-navy px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-navy-dark"
+            className="rounded-lg bg-navy px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-navy-dark active:scale-[0.97]"
           >
             Book a Free Consultation
           </Link>
@@ -108,7 +108,7 @@ export function SiteHeader() {
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 rounded-lg bg-navy px-4 py-3 text-center text-base font-semibold text-white transition-colors hover:bg-navy-dark"
+                className="mt-2 rounded-lg bg-navy px-4 py-3 text-center text-base font-semibold text-white transition-all hover:bg-navy-dark active:scale-[0.97]"
               >
                 Book a Free Consultation
               </Link>

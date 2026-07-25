@@ -3,13 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
-
-const bars = [
-  { color: "bg-brand-red", height: "h-28 md:h-36", delay: 0.2 },
-  { color: "bg-brand-amber", height: "h-40 md:h-52", delay: 0.4 },
-  { color: "bg-brand-green", height: "h-52 md:h-68", delay: 0.6 },
-];
 
 export function Hero() {
   return (
@@ -30,7 +23,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28 lg:px-8">
         <div className="flex flex-col items-start gap-6">
           <motion.h1
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl lg:text-6xl"
@@ -38,7 +31,7 @@ export function Hero() {
             From Risk to Compliance <span className="text-brand-green"> - Handled.</span>
           </motion.h1>
           <motion.p
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             className="max-w-lg text-lg leading-relaxed text-white/75 text-pretty"
@@ -47,7 +40,7 @@ export function Hero() {
             documentation done right.
           </motion.p>
           <motion.div
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col gap-4 sm:flex-row"
@@ -67,27 +60,38 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="relative flex items-end justify-center gap-5 pb-6 md:justify-end md:pr-10" aria-hidden="true">
-          {bars.map((bar) => (
+        <div className="relative flex items-end justify-center pb-6 md:justify-end md:pr-10" aria-hidden="true">
+          <div className="relative w-64 md:w-80">
             <motion.div
-              key={bar.color}
-              initial={{ scaleY: 1 }}
-              animate={{ scaleY: 1 }}
-              transition={{ duration: 0.8, delay: bar.delay, ease: "easeOut" }}
-              style={{ originY: 1 }}
-              className={`w-16 rounded-t-md md:w-20 ${bar.color} ${bar.height}`}
-            />
-          ))}
-          <motion.div
-            initial={{ opacity: 1, scale: 1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 1.2, ease: "easeOut" }}
-            className="absolute -bottom-4 right-1/2 translate-x-1/2 md:right-4 md:translate-x-0"
-          >
-            <div className="flex size-14 items-center justify-center rounded-full bg-white shadow-lg">
-              <Check className="size-8 text-navy" strokeWidth={3.5} />
-            </div>
-          </motion.div>
+              initial={{ clipPath: "inset(0 100% 0 0)" }}
+              animate={{ clipPath: "inset(0 0% 0 0)" }}
+              transition={{ duration: 1.1, delay: 0.3, ease: "easeInOut" }}
+            >
+              <Image
+                src="/images/logo-bars-only.png"
+                alt=""
+                width={1280}
+                height={1290}
+                className="h-auto w-full"
+                priority
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5, rotate: -8 }}
+              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+              transition={{ duration: 0.6, delay: 1.3, type: "spring", stiffness: 200, damping: 12 }}
+              className="absolute inset-0 drop-shadow-[0_0_25px_rgba(255,255,255,0.45)]"
+            >
+              <Image
+                src="/images/logo-checkmark-only.png"
+                alt=""
+                width={1280}
+                height={1290}
+                className="h-auto w-full"
+                priority
+              />
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
