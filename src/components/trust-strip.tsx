@@ -10,7 +10,7 @@ const credentials = [
 
 export function TrustStrip() {
   return (
-    <section className="relative z-10 -mt-12 md:-mt-16" aria-label="Credentials">
+    <section className="relative z-10 -mt-28 md:-mt-36" aria-label="Credentials">
       <FadeUp
         delay={0.2}
         className="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-4 rounded-2xl bg-white px-6 py-5 shadow-xl md:px-10 md:py-6"
