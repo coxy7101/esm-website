@@ -59,6 +59,7 @@ export function ServicesOverview() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(18,41,77,0.18)]">
               <Image
                 src="/images/homepage-window-cleaner.jpg"
+                priority
                 alt="Safety professional working at height, representing our careful, considered approach"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}

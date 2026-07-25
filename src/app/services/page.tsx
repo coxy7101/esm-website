@@ -69,6 +69,7 @@ export default function ServicesPage() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
               <Image
                 src="/images/services-fire-inspection.jpg"
+                priority
                 alt="Consultant carrying out a fire safety compliance inspection"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}

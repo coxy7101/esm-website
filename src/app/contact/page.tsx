@@ -55,6 +55,7 @@ export default function ContactPage() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
               <Image
                 src="/images/contact-office-phone.jpg"
+                priority
                 alt="Office phone, representing our direct and responsive approach to enquiries"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}

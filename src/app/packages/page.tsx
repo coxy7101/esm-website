@@ -36,6 +36,7 @@ export default function PackagesPage() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
               <Image
                 src="/images/packages-desk-meeting.jpg"
+                priority
                 alt="Planning documents and notes laid out on a table, representing considered, tailored support"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
