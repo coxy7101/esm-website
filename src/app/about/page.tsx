@@ -57,14 +57,13 @@ export default function AboutPage() {
             <FadeUp delay={0.15}>
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
                 <Image
-                  src="/images/industry-construction.jpg"
-                  alt="Safety professional working at height on a construction site"
+                  src="/images/about-site-review.jpg"
+                  alt="Consultant reviewing site plans, representing our hands-on approach"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
                 />
-                {/* Subtle amber accent border */}
                 <div
                   className="absolute inset-0 rounded-xl ring-2 ring-inset"
                   style={{ borderColor: "rgba(244,160,32,0.35)" }}
