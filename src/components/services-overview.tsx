@@ -46,7 +46,7 @@ export function ServicesOverview() {
   return (
     <section className="bg-background" aria-labelledby="services-heading">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mt-10">
+        <div className="mt-10 grid items-center gap-8 lg:grid-cols-2">
           <FadeUp>
             <h2 id="services-heading" className="text-3xl font-bold uppercase tracking-tight text-navy text-balance md:text-4xl">
               How We Help
@@ -54,6 +54,17 @@ export function ServicesOverview() {
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground text-pretty">
               Nine core services covering everything from your first policy document to full compliance audits.
             </p>
+          </FadeUp>
+          <FadeUp delay={0.15}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(18,41,77,0.18)]">
+              <Image
+                src="/images/homepage-window-cleaner.jpg"
+                alt="Safety professional working at height, representing our careful, considered approach"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </FadeUp>
         </div>
 

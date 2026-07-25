@@ -37,8 +37,8 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white" aria-labelledby="contact-hero-heading">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
-          <FadeUp className="flex max-w-3xl flex-col gap-5">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:py-28 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
+          <FadeUp className="flex flex-col gap-5">
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">Contact Us</p>
             <h1
               id="contact-hero-heading"
@@ -50,6 +50,17 @@ export default function ContactPage() {
               One conversation is all it takes to understand where your business stands. No pressure, no sales pitch - 
               just honest, practical advice.
             </p>
+          </FadeUp>
+          <FadeUp delay={0.15}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+              <Image
+                src="/images/contact-reception-bell.jpg"
+                alt="Reception desk bell, representing a warm and responsive welcome"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </FadeUp>
         </div>
       </section>
