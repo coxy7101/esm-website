@@ -24,26 +24,21 @@ export function Hero() {
           loading="eager"
           fetchPriority="high"
         />
-        {/* Dark navy gradient overlay */}
-        <div
-          className="absolute inset-0"
-          style={{ background: "rgba(18,41,77,0.78)" }}
-        />
+        <div className="absolute inset-0" style={{ background: "rgba(18,41,77,0.78)" }} />
       </div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28 lg:px-8">
         <div className="flex flex-col items-start gap-6">
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl lg:text-6xl"
           >
-            From Risk to Compliance{" "}
-            <span className="text-brand-green"> - Handled.</span>
+            From Risk to Compliance <span className="text-brand-green"> - Handled.</span>
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             className="max-w-lg text-lg leading-relaxed text-white/75 text-pretty"
@@ -52,7 +47,7 @@ export function Hero() {
             documentation done right.
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col gap-4 sm:flex-row"
@@ -76,7 +71,7 @@ export function Hero() {
           {bars.map((bar) => (
             <motion.div
               key={bar.color}
-              initial={{ scaleY: 0 }}
+              initial={{ scaleY: 1 }}
               animate={{ scaleY: 1 }}
               transition={{ duration: 0.8, delay: bar.delay, ease: "easeOut" }}
               style={{ originY: 1 }}
@@ -84,7 +79,7 @@ export function Hero() {
             />
           ))}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 1, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1.2, ease: "easeOut" }}
             className="absolute -bottom-4 right-1/2 translate-x-1/2 md:right-4 md:translate-x-0"
