@@ -45,7 +45,7 @@ const services = [
 export function ServicesOverview() {
   return (
     <section className="bg-background" aria-labelledby="services-heading">
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pt-10 pb-20 sm:px-6 lg:px-8">
         <div className="mt-10 grid items-center gap-8 lg:grid-cols-2">
           <FadeUp>
             <h2 id="services-heading" className="text-3xl font-bold uppercase tracking-tight text-navy text-balance md:text-4xl">
