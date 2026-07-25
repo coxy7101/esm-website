@@ -86,7 +86,7 @@ export default async function ServiceDetailPage({
             {/* Left - detail copy */}
             <FadeUp className="flex flex-col gap-8">
               <p className="text-base leading-relaxed text-muted-foreground text-pretty md:text-lg">
-                {service.detail.intro}
+                {service.intro}
               </p>
 
               <div>
@@ -97,7 +97,7 @@ export default async function ServiceDetailPage({
                   What&apos;s Included
                 </h2>
                 <ul className="flex flex-col gap-3">
-                  {service.detail.bullets.map((bullet) => (
+                  {service.whatsIncluded.map((bullet) => (
                     <li key={bullet} className="flex items-start gap-3 text-sm text-foreground md:text-base">
                       <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand-green/15">
                         <Check className="size-3 text-brand-green" aria-hidden="true" />
@@ -109,7 +109,7 @@ export default async function ServiceDetailPage({
               </div>
 
               <p className="text-base leading-relaxed text-muted-foreground text-pretty">
-                {service.detail.closing}
+                {service.whyItMatters}
               </p>
             </FadeUp>
 
