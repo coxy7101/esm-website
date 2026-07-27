@@ -49,7 +49,7 @@ export function SiteFooter() {
               Bulkington, Warwickshire, West Midlands
             </p>
             <a
-              href="tel:+441234567890"
+              href="tel:+442476012642"
               className="flex w-fit items-center gap-2 text-sm text-white/70 transition-colors hover:text-white"
             >
               <Phone className="size-4 shrink-0 text-brand-green" aria-hidden="true" />

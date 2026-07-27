@@ -1,24 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
-
-const STORAGE_KEY = "esm-cookie-consent";
+import { setCookieConsent, useCookieConsent, type CookieConsent } from "@/lib/cookie-consent";
 
 export function CookieBanner() {
-  const [visible, setVisible] = useState(false);
+  const consent = useCookieConsent();
 
-  useEffect(() => {
-    const consent = localStorage.getItem(STORAGE_KEY);
-    if (!consent) setVisible(true);
-  }, []);
-
-  function handleChoice(choice: "accepted" | "declined") {
-    localStorage.setItem(STORAGE_KEY, choice);
-    setVisible(false);
+  function handleChoice(choice: CookieConsent) {
+    setCookieConsent(choice);
   }
 
-  if (!visible) return null;
+  if (consent !== null) return null;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-[60] border-t border-border bg-navy px-4 py-5 text-white shadow-lg sm:px-6 lg:px-8">
