@@ -99,7 +99,10 @@ export default function ServicesPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
               <FadeUp key={service.slug} delay={i * 0.08} className="h-full">
-                <article className="flex h-full flex-col gap-4 rounded-xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-navy/30 hover:shadow-lg">
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="group flex h-full flex-col gap-4 rounded-xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-navy/30 hover:shadow-lg"
+                >
                   <div className="flex size-12 items-center justify-center rounded-lg bg-navy">
                     <service.icon className="size-6 text-white" aria-hidden="true" />
                   </div>
@@ -113,7 +116,7 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
-                </article>
+                </Link>
               </FadeUp>
             ))}
           </div>
