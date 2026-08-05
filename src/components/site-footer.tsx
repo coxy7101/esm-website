@@ -25,7 +25,7 @@ export function SiteFooter() {
               />
             </div>
             <p className="text-sm leading-relaxed text-white/70 text-pretty">
-              Expert health &amp; safety consultancy helping West Midlands businesses move from risk to compliance.
+              Essential Safety Management is a UK-wide health and safety consultancy supporting organisations with audits, risk assessments, documentation, training and ongoing compliance management.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export function SiteFooter() {
             <h2 className="text-sm font-bold uppercase tracking-wider text-white">Contact</h2>
             <p className="flex items-start gap-2 text-sm text-white/70">
               <MapPin className="mt-0.5 size-4 shrink-0 text-brand-green" aria-hidden="true" />
-              Bulkington, Warwickshire, West Midlands
+              Head office: Bulkington, Warwickshire
             </p>
             <a
               href="tel:+442476012642"
@@ -66,7 +66,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-white/50">TechIOSH | NEBOSH Certified | IOSH Managing Safely | Fully Insured</p>
+          <p className="text-xs text-white/50">Evidence of professional competence and insurance is available on request.</p>
           <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} Essential Safety Management. All rights reserved.
           </p>

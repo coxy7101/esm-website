@@ -91,7 +91,7 @@ export default function ServicesPage() {
               What We Deliver
             </h2>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground text-pretty">
-              Six core services covering every stage of your compliance journey - use one, or combine them into a
+              Nine core services covering every stage of your compliance journey - use one, or combine them into a
               complete safety management package.
             </p>
           </FadeUp>
