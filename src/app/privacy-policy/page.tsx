@@ -4,6 +4,9 @@ import { FadeUp } from "@/components/fade-up";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How Essential Safety Management collects, uses, and protects your personal data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

@@ -5,9 +5,14 @@ import { FadeUp } from "@/components/fade-up";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: {
+    absolute: "Contact Essential Safety Management | UK-Wide Consultancy",
+  },
   description:
     "Book your free, no-obligation health & safety consultation. Essential Safety Management supports organisations throughout the UK from our base in Bulkington, Warwickshire.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const contactDetails = [

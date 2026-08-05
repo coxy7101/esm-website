@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Check, X, ArrowRight } from "lucide-react";
-import { packages, comparisonRows } from "@/data/packages";
+import { packages, comparisonRows, packagesFaq } from "@/data/packages";
 import { FadeUp } from "@/components/fade-up";
 import { FinalCta } from "@/components/final-cta";
 import { PackagesFaq } from "@/components/packages-faq";
@@ -11,11 +11,31 @@ export const metadata: Metadata = {
   title: "Packages",
   description:
     "H&S packages tailored to your business - from essential compliance support to fully outsourced health & safety management. Contact us for a quote.",
+  alternates: {
+    canonical: "/packages",
+  },
 };
 
 export default function PackagesPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: packagesFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-navy text-white texture-overlay" aria-labelledby="packages-hero-heading">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:py-28 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">

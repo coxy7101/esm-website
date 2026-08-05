@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Case Studies",
   description:
     "See how we've helped businesses across construction, manufacturing, hospitality, and more achieve compliance, reduce incidents, and build genuine safety cultures.",
+  alternates: {
+    canonical: "/case-studies",
+  },
 };
 
 const caseStudyImages: Record<string, string> = {

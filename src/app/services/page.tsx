@@ -18,9 +18,12 @@ import { FinalCta } from "@/components/final-cta";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Health & Safety Consultancy Services UK",
   description:
     "Health & safety policies, risk assessments, audits, CDM support, competent person services and training for organisations across the UK.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 const industries = [

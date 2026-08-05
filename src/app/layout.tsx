@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   },
   description:
     "UK-wide health and safety consultancy providing audits, risk assessments, policies, training, CDM support and retained competent-person services.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Health & Safety Consultancy UK | Essential Safety Management",
     description:

@@ -23,8 +23,11 @@ export async function generateMetadata({
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `${service.title} | Essential Safety Management`,
+    title: service.title,
     description: service.description,
+    alternates: {
+      canonical: `/services/${service.slug}`,
+    },
   };
 }
 
@@ -40,6 +43,28 @@ export default async function ServiceDetailPage({
 
   if (!service) notFound();
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.description,
+    provider: {
+      "@type": "ProfessionalService",
+      name: "Essential Safety Management",
+    },
+    areaServed: "United Kingdom",
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://essentialsafetymanagement.com" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://essentialsafetymanagement.com/services" },
+      { "@type": "ListItem", position: 3, name: service.title, item: `https://essentialsafetymanagement.com/services/${service.slug}` },
+    ],
+  };
+
   const Icon = service.icon;
 
   // Adjacent services for prev/next navigation
@@ -49,6 +74,14 @@ export default async function ServiceDetailPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="bg-navy text-white" aria-labelledby="service-hero-heading">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">

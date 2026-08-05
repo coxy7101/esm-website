@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Industries",
   description:
     "We have deep experience across a wide range of sectors, allowing us to provide genuinely sector-specific health and safety advice rather than generic guidance.",
+  alternates: {
+    canonical: "/industries",
+  },
 };
 
 export default function IndustriesPage() {
