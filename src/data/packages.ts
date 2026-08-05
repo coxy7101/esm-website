@@ -12,14 +12,14 @@ export type Package = {
 export const packages: Package[] = [
   {
     tier: "bronze",
-    name: "Bronze",
+    name: "Essential Compliance",
     tagline: "Essential Compliance Support",
     mostPopular: false,
     description:
       "Designed for smaller businesses or low-risk environments requiring foundational support and reassurance.",
     bestSuitedFor: "Low-risk businesses, offices, small workshops, start-ups.",
     included: [
-      "Telephone & email H&S advice (Mon–Wed, 09:00–17:00)",
+      "Email and telephone advice within the agreed service hours and response times",
       "Annual Workplace Inspection",
       "Detailed report with findings & action plan",
       "Review of existing H&S Policy",
@@ -35,7 +35,7 @@ export const packages: Package[] = [
   },
   {
     tier: "silver",
-    name: "Silver",
+    name: "Managed Compliance",
     tagline: "Managed Compliance & Ongoing Support",
     mostPopular: true,
     description:
@@ -58,14 +58,14 @@ export const packages: Package[] = [
   },
   {
     tier: "gold",
-    name: "Gold",
+    name: "Outsourced H&S Management",
     tagline: "Fully Outsourced Health & Safety Management",
     mostPopular: false,
     description:
       "A comprehensive solution where Essential Safety Management operates as your external H&S department.",
     bestSuitedFor: "Construction companies, manufacturing, engineering firms, higher-risk operations.",
     included: [
-      "Dedicated Competent H&S Advisor",
+      "Lead competent health and safety adviser with continuity of account knowledge",
       "Priority support (Mon–Sat, 09:00–18:00)",
       "Full H&S Policy & Management System",
       "Comprehensive Initial Audit + ongoing compliance tracking",

@@ -135,9 +135,9 @@ export default function PackagesPage() {
               <thead>
                 <tr>
                   <th className="bg-navy p-4 text-left font-bold uppercase tracking-wide text-white">Feature</th>
-                  <th className="bg-navy p-4 text-center font-bold uppercase tracking-wide text-white">Bronze</th>
-                  <th className="bg-[#F4A020] p-4 text-center font-bold uppercase tracking-wide text-navy">Silver</th>
-                  <th className="bg-navy p-4 text-center font-bold uppercase tracking-wide text-white">Gold</th>
+                  <th className="bg-navy p-4 text-center font-bold uppercase tracking-wide text-white">Essential Compliance</th>
+                  <th className="bg-[#F4A020] p-4 text-center font-bold uppercase tracking-wide text-navy">Managed Compliance</th>
+                  <th className="bg-navy p-4 text-center font-bold uppercase tracking-wide text-white">Outsourced H&amp;S Management</th>
                 </tr>
               </thead>
               <tbody>
