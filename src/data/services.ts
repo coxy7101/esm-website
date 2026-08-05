@@ -42,7 +42,7 @@ export const services: Service[] = [
       "Annual policy reviews",
     ],
     whyItMatters:
-      "Under the Health and Safety at Work etc. Act 1974, employers with five or more staff are legally required to have a written health & safety policy. Beyond the legal minimum, clear documentation is often the first thing an inspector, insurer, or client asks to see - and the difference between a smooth audit and a serious problem.",
+      "Every organisation needs clear arrangements for managing health and safety. Where five or more people are employed, the policy must be recorded in writing. We develop proportionate documentation that reflects how your organisation actually operates - not generic templates that sit unused.",
     idealFor: ["Businesses without any current H&S policy", "Growing teams past the 5-employee threshold", "Anyone renewing insurance or tendering for contracts"],
   },
   {
@@ -53,7 +53,7 @@ export const services: Service[] = [
       "Practical assessments that identify real hazards in your workplace - and give you clear, prioritised actions to control them.",
     points: ["Fire risk assessments", "COSHH assessments", "Workplace & task-specific hazards"],
     intro:
-      "A risk assessment that just ticks boxes doesn't protect anyone. We walk your site, talk to your team, and identify the hazards that actually exist in your workplace - then give you a clear, prioritised plan to control them.",
+      "Effective risk assessments should identify the hazards present, establish who may be harmed and set out proportionate control measures. We combine site observation, consultation and document review to produce clear, prioritised actions.",
     whatsIncluded: [
       "General workplace risk assessments",
       "COSHH assessments",
@@ -71,7 +71,7 @@ export const services: Service[] = [
     icon: SearchCheck,
     title: "Audits & Compliance",
     description:
-      "Independent audits that show exactly where you stand against current legislation, with a clear roadmap to full compliance.",
+      "Independent audits that show exactly where you stand against current legislation, with a clear, prioritised improvement plan.",
     points: ["Full compliance gap analysis", "Workplace inspections", "Prioritised action plans"],
     intro:
       "An independent set of eyes catches what internal reviews miss. We audit your current practices against current legislation and industry best practice, then hand you a clear, prioritised roadmap - not just a list of problems.",
@@ -97,12 +97,12 @@ export const services: Service[] = [
     intro:
       "CDM 2015 places specific legal duties on clients, designers, and contractors alike. We provide hands-on, practical support through every stage of a project - from pre-construction planning to handover - so nothing falls through the gaps.",
     whatsIncluded: [
-      "Principal Designer support",
-      "CDM Coordinator services",
-      "Pre-construction information",
-      "Construction phase plans",
-      "Health & safety file preparation",
-      "CDM compliance audits",
+      "Client dutyholder support",
+      "Principal Designer advisory support, where within our competence and appointment scope",
+      "Pre-construction information support",
+      "Construction phase plan reviews",
+      "Health & safety file support",
+      "CDM compliance reviews and site inspections",
     ],
     whyItMatters:
       "CDM 2015 duties apply to every construction project, regardless of size - and clients and principal contractors carry real legal liability if they're not met. Getting the right support in place early avoids delays, disputes, and enforcement risk later.",
@@ -116,7 +116,7 @@ export const services: Service[] = [
       "Meet your legal duty to appoint a competent person - with a retained consultant who knows your business inside out.",
     points: ["Retained advisory service", "24/7 incident support line", "Named consultant for your business"],
     intro:
-      "Every employer is legally required to appoint a competent person for health & safety. Rather than a rotating call centre, you get a named consultant who actually knows your business, your site, and your history.",
+      "Every employer is legally required to appoint a competent person for health & safety. You receive a consistent lead contact, documented service history and continuity of support throughout the engagement.",
     whatsIncluded: [
       "Retained monthly advisory service",
       "Named consultant, direct contact",
@@ -125,7 +125,7 @@ export const services: Service[] = [
       "Regular check-ins, not just reactive calls",
     ],
     whyItMatters:
-      "Section 7 of the Management of Health and Safety at Work Regulations 1999 requires every employer to appoint one or more competent persons. It's one of the most commonly overlooked legal duties for smaller businesses - and one of the simplest to resolve properly.",
+      "Regulation 7 of the Management of Health and Safety at Work Regulations 1999 requires employers to appoint one or more competent persons to assist them in meeting their health and safety duties. Our retained service provides structured advice, monitoring and practical support while keeping responsibilities and actions clearly documented.",
     idealFor: ["Businesses without an internal H&S manager", "SMEs needing ongoing, not one-off, support", "Anyone currently relying on an informal arrangement"],
   },
   {
@@ -136,7 +136,7 @@ export const services: Service[] = [
       "Engaging, jargon-free training delivered on-site or remotely, so your team understands safety rather than just signing a form.",
     points: ["Staff safety awareness", "Fire warden training", "Manual handling & toolbox talks"],
     intro:
-      "Training that's just a slideshow and a signature doesn't change behaviour. We deliver practical, jargon-free sessions - on-site or remote - that your team actually engages with and remembers.",
+      "Practical health and safety training tailored to your workplace, workforce and risk profile. Sessions can be delivered on site or remotely and are supported by attendance records and relevant course materials.",
     whatsIncluded: [
       "Manual handling training",
       "Health & safety induction",
@@ -164,7 +164,7 @@ export const services: Service[] = [
       "Emergency evacuation plans",
       "Fire safety training",
       "Equipment inspections",
-      "Compliance certification",
+      "Written findings, action plan and review schedule",
     ],
     whyItMatters:
       "The Regulatory Reform (Fire Safety) Order 2005 places a legal duty on the 'responsible person' at any non-domestic premises to carry out and regularly review a fire risk assessment. Getting this wrong carries some of the most severe enforcement penalties in UK H&S law, including unlimited fines and imprisonment.",
@@ -199,7 +199,7 @@ export const services: Service[] = [
       "Practical support building and maintaining an ISO 45001 occupational health & safety management system, from gap analysis to certification readiness.",
     points: ["Gap analysis against ISO 45001", "Management system documentation", "Certification readiness support"],
     intro:
-      "ISO 45001 is the international standard for occupational health & safety management systems - but building one from scratch, or maintaining an existing one, takes real expertise. We support you through every stage, from initial gap analysis to certification-ready documentation.",
+      "ISO 45001 is the international standard for occupational health & safety management systems - but building one from scratch, or maintaining an existing one, takes real expertise. We support you through every stage, from initial gap analysis to preparing your management system for independent certification assessment.",
     whatsIncluded: [
       "Gap analysis against ISO 45001 requirements",
       "Management system documentation",

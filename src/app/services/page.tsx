@@ -8,6 +8,10 @@ import {
   Briefcase,
   Store,
   Check,
+  Search,
+  ClipboardList,
+  Wrench,
+  RefreshCw,
 } from "lucide-react";
 import { FadeUp } from "@/components/fade-up";
 import { FinalCta } from "@/components/final-cta";
@@ -16,7 +20,7 @@ import { services } from "@/data/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Health & safety policies, risk assessments, audits, CDM support, competent person services and training for West Midlands businesses.",
+    "Health & safety policies, risk assessments, audits, CDM support, competent person services and training for organisations across the UK.",
 };
 
 const industries = [
@@ -46,6 +50,13 @@ const industries = [
   },
 ];
 
+const process = [
+  { icon: Search, title: "Assess", description: "We establish your current position and priorities." },
+  { icon: ClipboardList, title: "Plan", description: "You receive a clear scope, deliverables and timescale." },
+  { icon: Wrench, title: "Implement", description: "We help put practical controls and documentation in place." },
+  { icon: RefreshCw, title: "Review", description: "Progress is checked and support adjusted as your organisation develops." },
+];
+
 export default function ServicesPage() {
   return (
     <>
@@ -58,11 +69,16 @@ export default function ServicesPage() {
               id="services-hero-heading"
               className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl"
             >
-              Expert Health &amp; Safety Services Across the West Midlands
+              UK-Wide Health and Safety Consultancy Services
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
-              Everything your business needs to stay legally compliant, protect your staff and pass any inspection - 
-              delivered by qualified consultants who speak your language, not legal jargon.
+              Practical support to help your organisation meet its legal duties, manage workplace risk and maintain
+              effective safety systems. Services are available as individual projects or as part of an ongoing
+              consultancy package.
+            </p>
+            <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
+              Our support is delivered on site throughout the UK and remotely where appropriate, with every
+              assignment scoped around your operations, sector and risk profile.
             </p>
           </FadeUp>
           <FadeUp delay={0.15}>
@@ -117,6 +133,37 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                 </Link>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our process */}
+      <section className="bg-background" aria-labelledby="process-heading">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <FadeUp>
+            <h2
+              id="process-heading"
+              className="text-3xl font-bold uppercase tracking-tight text-navy text-balance md:text-4xl"
+            >
+              How We Work
+            </h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground text-pretty">
+              A clear, consistent process from first conversation to ongoing support.
+            </p>
+          </FadeUp>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {process.map((step, i) => (
+              <FadeUp key={step.title} delay={i * 0.1} className="h-full">
+                <article className="flex h-full flex-col gap-4 rounded-xl border border-border bg-card p-6">
+                  <div className="flex size-12 items-center justify-center rounded-lg bg-navy">
+                    <step.icon className="size-6 text-white" aria-hidden="true" />
+                  </div>
+                  <h3 className="text-lg font-bold text-navy">{step.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+                </article>
               </FadeUp>
             ))}
           </div>
