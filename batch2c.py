@@ -1,4 +1,8 @@
-import { Globe2, ShieldCheck, Handshake, Target } from "lucide-react";
+#!/usr/bin/env python3
+"""ESM Batch 2c — trust strip as dark glass cards matching hero."""
+import pathlib
+
+pathlib.Path("src/components/trust-strip.tsx").write_text('''import { Globe2, ShieldCheck, Handshake, Target } from "lucide-react";
 import { FadeUp } from "@/components/fade-up";
 
 const pillars = [
@@ -28,3 +32,5 @@ export function TrustStrip() {
     </section>
   );
 }
+''', encoding="utf-8")
+print("OK  trust-strip.tsx rebuilt as dark glass cards")
