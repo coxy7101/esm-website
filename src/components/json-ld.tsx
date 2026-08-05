@@ -4,7 +4,7 @@ export function JsonLd() {
     "@type": "ProfessionalService",
     name: "Essential Safety Management",
     description:
-      "Expert health & safety consultancy for West Midlands businesses. Audits, risk assessments, policies and documentation.",
+      "UK-wide health and safety consultancy providing audits, risk assessments, policies, training, CDM support and retained competent-person services.",
     url: "https://essentialsafetymanagement.com",
     telephone: "+442476012642",
     email: "info@essentialsafetymanagement.com",
@@ -14,8 +14,8 @@ export function JsonLd() {
       addressRegion: "Warwickshire",
       addressCountry: "GB",
     },
-    areaServed: ["Coventry", "Birmingham", "Leicester", "Warwickshire"],
-    priceRange: "££",
+    areaServed: "United Kingdom",
+    priceRange: "\u00a3\u00a3",
   };
 
   return (

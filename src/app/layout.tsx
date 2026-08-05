@@ -14,15 +14,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://essentialsafetymanagement.com"),
   title: {
-    default: "Essential Safety Management | Health & Safety Consultancy, West Midlands",
+    default: "Health & Safety Consultancy UK | Essential Safety Management",
     template: "%s | Essential Safety Management",
   },
   description:
-    "Expert health & safety consultancy for West Midlands businesses. Audits, risk assessments, policies and documentation done right. Based in Bulkington, Warwickshire.",
+    "UK-wide health and safety consultancy providing audits, risk assessments, policies, training, CDM support and retained competent-person services.",
   openGraph: {
-    title: "Essential Safety Management | Health & Safety Consultancy",
+    title: "Health & Safety Consultancy UK | Essential Safety Management",
     description:
-      "Expert health & safety consultancy for West Midlands businesses. Audits, risk assessments, policies and documentation done right.",
+      "UK-wide health and safety consultancy providing audits, risk assessments, policies, training, CDM support and retained competent-person services.",
     url: "https://essentialsafetymanagement.com",
     siteName: "Essential Safety Management",
     locale: "en_GB",

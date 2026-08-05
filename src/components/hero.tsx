@@ -28,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl lg:text-6xl"
           >
-            From Risk to Compliance <span className="text-brand-green"> - Handled.</span>
+            Practical health and safety management for organisations <span className="text-brand-green">across the UK</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -36,8 +36,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             className="max-w-lg text-lg leading-relaxed text-white/75 text-pretty"
           >
-            Expert health &amp; safety consultancy for West Midlands businesses. Audits, risk assessments, and
-            documentation done right.
+            Audits, risk assessments, policies, training and retained competent-person support&mdash;delivered on site throughout the UK and remotely where appropriate.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -49,13 +48,13 @@ export function Hero() {
               href="/contact"
               className="rounded-lg bg-brand-green px-6 py-3.5 text-center text-base font-semibold text-white transition-colors hover:bg-brand-green/85"
             >
-              Book a Free Consultation
+              Book an Initial Consultation
             </Link>
             <Link
               href="/services"
               className="rounded-lg border border-white/30 px-6 py-3.5 text-center text-base font-semibold text-white transition-colors hover:bg-white/10"
             >
-              View Our Services
+              Explore Our Services
             </Link>
           </motion.div>
         </div>

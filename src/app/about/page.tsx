@@ -7,15 +7,15 @@ import { FinalCta } from "@/components/final-cta";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Essential Safety Management is a health & safety consultancy based in Bulkington, Warwickshire, delivering practical, jargon-free safety advice across the West Midlands.",
+    "Essential Safety Management is a UK-wide health and safety consultancy based in Bulkington, Warwickshire, delivering practical, jargon-free safety advice to organisations across the UK.",
 };
 
 const values = [
   {
     icon: Award,
-    title: "Certified Expertise",
+    title: "Competence Matched to the Assignment",
     description:
-      "NEBOSH and IOSH qualified consultants with hands-on experience across construction, manufacturing and commercial environments - not just theory from a textbook.",
+      "Every engagement is scoped according to the sector, level of risk and specialist competence required. Evidence of relevant professional competence and insurance is available on request.",
   },
   {
     icon: MessagesSquare,
@@ -25,13 +25,13 @@ const values = [
   },
   {
     icon: MapPin,
-    title: "Local & Reliable",
+    title: "UK-Wide, Responsive Delivery",
     description:
-      "Based in Bulkington, we're on-site across the West Midlands when you need us most - for planned visits, urgent incidents or a same-day phone call.",
+      "On-site support is available throughout the UK, supported by remote advice, structured reporting and clear agreed timescales.",
   },
 ];
 
-const accreditations = ["CHAS", "SafeContractor", "ISO 45001", "Constructionline", "NEBOSH", "IOSH"];
+const accreditations = ["CHAS", "SafeContractor", "ISO 45001", "Constructionline"];
 
 export default function AboutPage() {
   return (
@@ -46,11 +46,16 @@ export default function AboutPage() {
                 id="about-hero-heading"
                 className="text-4xl font-bold uppercase tracking-tight text-balance md:text-5xl"
               >
-                Moving West Midlands Businesses From Risk to Compliance
+                Practical Health and Safety Support for Organisations Across the UK
               </h1>
               <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
-                A hands-on health &amp; safety consultancy built on one belief: compliance should make your business
-                safer and stronger - not bury it in paperwork.
+                Essential Safety Management is a UK health and safety consultancy helping organisations manage risk,
+                meet their legal duties and build safety systems that work in practice.
+              </p>
+              <p className="max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
+                Based in Warwickshire and supporting clients throughout the UK, we provide project-based and retained
+                consultancy across construction, manufacturing, logistics, commercial and other working environments.
+                Our approach combines clear advice, practical implementation and accountable ongoing support.
               </p>
             </FadeUp>
 
@@ -155,7 +160,7 @@ export default function AboutPage() {
               id="accreditations-heading"
               className="text-sm font-semibold uppercase tracking-widest text-muted-foreground"
             >
-              Accreditations &amp; Industry Standards We Work To
+              Professional Standards and Frameworks
             </h2>
             <ul className="flex flex-wrap items-center justify-center gap-4">
               {accreditations.map((name) => (

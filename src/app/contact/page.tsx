@@ -7,7 +7,7 @@ import { ContactForm } from "@/components/contact-form";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book your free, no-obligation health & safety consultation. Serving Coventry, Birmingham, Leicester and Warwickshire from our base in Bulkington.",
+    "Book your free, no-obligation health & safety consultation. Essential Safety Management supports organisations throughout the UK from our base in Bulkington, Warwickshire.",
 };
 
 const contactDetails = [
@@ -30,7 +30,10 @@ const contactDetails = [
   },
 ];
 
-const coverageAreas = ["Coventry", "Birmingham", "Leicester", "Warwickshire"];
+const coverageDetails = [
+  { label: "Head office", value: "Bulkington, Warwickshire" },
+  { label: "Service area", value: "United Kingdom" },
+];
 
 export default function ContactPage() {
   return (
@@ -115,20 +118,18 @@ export default function ContactPage() {
                 <Map className="size-6 text-brand-green" aria-hidden="true" />
                 <h3 className="text-lg font-bold uppercase tracking-wide">Our Coverage Area</h3>
               </div>
-              <p className="text-sm leading-relaxed text-white/70 text-pretty">
-                Based in Bulkington, we provide on-site health &amp; safety support across the wider West Midlands
-                region, including:
-              </p>
-              <ul className="grid grid-cols-2 gap-3">
-                {coverageAreas.map((area) => (
-                  <li key={area} className="flex items-center gap-2 text-sm font-semibold">
+              <ul className="flex flex-col gap-3">
+                {coverageDetails.map((detail) => (
+                  <li key={detail.label} className="flex items-center gap-2 text-sm">
                     <MapPin className="size-4 shrink-0 text-brand-green" aria-hidden="true" />
-                    {area}
+                    <span className="font-semibold">{detail.label}:</span>
+                    <span className="text-white/80">{detail.value}</span>
                   </li>
                 ))}
               </ul>
               <p className="text-sm leading-relaxed text-white/70">
-                Outside these areas? Get in touch - we regularly travel further for the right projects.
+                Site visits are arranged according to project scope and urgency, with remote consultancy available
+                nationwide.
               </p>
             </div>
           </FadeUp>
