@@ -1,4 +1,8 @@
-import { Globe2, ShieldCheck, Handshake, Target } from "lucide-react";
+#!/usr/bin/env python3
+"""ESM Batch 2b — trust strip visual redesign."""
+import pathlib
+
+pathlib.Path("src/components/trust-strip.tsx").write_text('''import { Globe2, ShieldCheck, Handshake, Target } from "lucide-react";
 import { FadeUp } from "@/components/fade-up";
 import { cn } from "@/lib/utils";
 
@@ -38,3 +42,5 @@ export function TrustStrip() {
     </section>
   );
 }
+''', encoding="utf-8")
+print("OK  trust-strip.tsx redesigned")
