@@ -96,9 +96,9 @@ export default function PrivacyPolicyPage() {
             <div className="flex flex-col gap-2">
               <h2 className="text-xl font-bold text-navy">Cookies</h2>
               <p>
-                Our website may use essential cookies to function correctly, and may use additional cookies for
-                analytics or third-party embedded tools (such as our enquiry form). You can control cookie
-                preferences through your browser settings.
+                Our website uses only essential cookies required for it to function correctly. We do not use
+                third-party embedded tools or non-essential tracking cookies. You can control cookie preferences
+                through your browser settings.
               </p>
             </div>
 

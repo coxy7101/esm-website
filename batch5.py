@@ -1,4 +1,52 @@
-"use client";
+#!/usr/bin/env python3
+"""ESM Batch 5 -- first-party contact form, remove Typeform + cookie consent system."""
+import pathlib
+
+def replace_one(path, old, new, label):
+    p = pathlib.Path(path)
+    src = p.read_text(encoding="utf-8")
+    n = src.count(old)
+    if n == 1:
+        p.write_text(src.replace(old, new), encoding="utf-8")
+        print(f"  OK    {path} [{label}]")
+    else:
+        print(f"  WARN  {path} [{label}] -- found {n} matches, expected 1. Skipped.")
+
+pathlib.Path("src/app/api/contact").mkdir(parents=True, exist_ok=True)
+pathlib.Path("src/app/api/contact/route.ts").write_text('''import { Resend } from "resend";
+import { NextResponse } from "next/server";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function POST(request: Request) {
+  try {
+    const { name, organisation, contact, requirement } = await request.json();
+
+    if (!name || !contact || !requirement) {
+      return NextResponse.json({ error: "Please fill in all required fields." }, { status: 400 });
+    }
+
+    await resend.emails.send({
+      from: "Essential Safety Management <enquiries@essentialsafetymanagement.com>",
+      to: "info@essentialsafetymanagement.com",
+      replyTo: contact.includes("@") ? contact : undefined,
+      subject: `New enquiry from ${name}${organisation ? ` (${organisation})` : ""}`,
+      text: `Name: ${name}\\nOrganisation: ${organisation || "Not provided"}\\nEmail/Phone: ${contact}\\n\\nRequirement:\\n${requirement}`,
+    });
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error("Contact form error:", error);
+    return NextResponse.json(
+      { error: "Something went wrong sending your enquiry. Please try again or contact us directly." },
+      { status: 500 }
+    );
+  }
+}
+''', encoding="utf-8")
+print("OK  created src/app/api/contact/route.ts")
+
+pathlib.Path("src/components/contact-form.tsx").write_text('''"use client";
 
 import { useState, type FormEvent } from "react";
 
@@ -129,3 +177,42 @@ export function ContactForm() {
     </form>
   );
 }
+''', encoding="utf-8")
+print("OK  contact-form.tsx rewritten as first-party form")
+
+replace_one("src/app/layout.tsx",
+    '''import { JsonLd } from "@/components/json-ld";
+import { CookieBanner } from "@/components/cookie-banner";''',
+    '''import { JsonLd } from "@/components/json-ld";''',
+    "remove CookieBanner import")
+
+replace_one("src/app/layout.tsx",
+    '''        <SiteFooter />
+        <CookieBanner />
+      </body>''',
+    '''        <SiteFooter />
+      </body>''',
+    "remove CookieBanner usage")
+
+replace_one("src/app/privacy-policy/page.tsx",
+    '''              <p>
+                Our website may use essential cookies to function correctly, and may use additional cookies for
+                analytics or third-party embedded tools (such as our enquiry form). You can control cookie
+                preferences through your browser settings.
+              </p>''',
+    '''              <p>
+                Our website uses only essential cookies required for it to function correctly. We do not use
+                third-party embedded tools or non-essential tracking cookies. You can control cookie preferences
+                through your browser settings.
+              </p>''',
+    "privacy policy: cookies paragraph")
+
+for f in ["src/lib/cookie-consent.ts", "src/components/cookie-banner.tsx"]:
+    fp = pathlib.Path(f)
+    if fp.exists():
+        fp.unlink()
+        print(f"OK  deleted {f}")
+    else:
+        print(f"SKIP  {f} not found")
+
+print("\\nDone. Review WARN lines above before committing.")
