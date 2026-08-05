@@ -84,11 +84,11 @@ export default function ContactPage() {
                 id="contact-details-heading"
                 className="text-3xl font-bold uppercase tracking-tight text-navy text-balance md:text-4xl"
               >
-                Let&apos;s Talk Safety
+                Discuss Your Health and Safety Requirements
               </h2>
               <p className="max-w-xl text-base leading-relaxed text-muted-foreground text-pretty">
-                Call, email or send us a message - whichever suits you. We answer every enquiry personally, usually the
-                same day.
+                Tell us about your organisation, locations and priorities. Our team will review your enquiry and
+                respond within one working day.
               </p>
             </div>
 
